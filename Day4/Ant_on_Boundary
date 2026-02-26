@@ -1,0 +1,13 @@
+class Solution(object):
+    def returnToBoundaryCount(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        position=0
+        c=0
+        for i in nums:
+            position+=i
+            if position==0:
+                c+=1
+        return c
