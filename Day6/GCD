@@ -1,0 +1,11 @@
+from fractions import gcd
+class Solution(object):
+    def findGCD(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        l=sorted(nums)
+        res=gcd(l[0],l[-1])
+        return res
+        
